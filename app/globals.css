@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hero title - large on desktop, scales down on narrow screens so it fits on one line (no wrap, no scroll) */
+.hs-hero-title {
+  font-size: clamp(2.5rem, 8vw, 10rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
